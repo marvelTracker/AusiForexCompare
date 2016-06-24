@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import{Router, ROUTER_DIRECTIVES} from '@angular/router'
 
 @Component({
-    selector: 'fx-header',
+    selector: 'af-header',
     template: ` 
         <header class="row">
             <nav class="col-md-8 col-md-offset-2">

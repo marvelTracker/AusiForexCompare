@@ -3,16 +3,22 @@ import{Routes, ROUTER_DIRECTIVES} from '@angular/router'
 import{ForeignTransfersComponent} from './foreignTransfers.component'
 import{TravelNotesComponent} from './travelnotes.component'
 import{HeaderComponent} from './header.component'
+import{SideBarComponent} from './layout/sidebar.component'
 
 @Component({
-    selector: 'my-app',
-    template: ` 
-        <div class="container">
-            <fx-header></fx-header>
+    selector: 'af-app',
+    template: ` <div class="page-content">
+             <af-sidebar> </af-sidebar>
+            <!-- START X-NAVIGATION VERTICAL -->
+            <ul class="x-navigation x-navigation-horizontal x-navigation-panel"></ul>
+            <!-- PAGE CONTENT WRAPPER -->
+            <!-- END PAGE CONTENT WRAPPER -->
+           <af-header></af-header>
             <router-outlet></router-outlet>
-        </div>    
+        </div>
+           
     `,
-    directives:[ROUTER_DIRECTIVES, HeaderComponent]
+    directives:[ROUTER_DIRECTIVES, HeaderComponent, SideBarComponent]
 
 })
 @Routes([
