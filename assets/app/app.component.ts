@@ -8,7 +8,6 @@ import{HeaderComponent} from './header.component'
     selector: 'my-app',
     template: ` 
         <div class="container">
-            <fx-header></fx-header>
             <router-outlet></router-outlet>
         </div>    
     `,
