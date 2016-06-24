@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import{Router, ROUTER_DIRECTIVES} from '@angular/router'
 
 @Component({
-    selector: 'fx-header',
+    selector: 'af-header',
     template: ` 
         <header class="row">
             <nav class="col-md-8 col-md-offset-2">
                 <ul class="nav nav-pills">
-                    <li><a [routerLink]="['']">ForeignTransfers</a><li>
-                    <li><a [routerLink]="['travelnotes']">Travel Money</a><li>
+                    <li><a [routerLink]="['']">ForeignTransfers</a><li><li>
+                    <!-- <li><a [routerLink]="['travelnotes']">Travel Money</a><li><li>-->
+                    <!-- <li><a [routerLink]="['travelcheques']">Travel Cheque</a><li>-->
                 </ul>
             </nav>
         </header>
