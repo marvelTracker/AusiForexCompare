@@ -1,6 +1,7 @@
 {
   "name": "@angular/router",
   "version": "2.0.0-rc.1",
+  "description": "",
   "main": "index.js",
   "jsnext:main": "esm/index.js",
   "typins": "index.d.ts",
@@ -38,6 +39,5 @@
     "host": "packages-16-east.internal.npmjs.com",
     "tmp": "tmp/router-2.0.0-rc.1.tgz_1462310744425_0.4073680811561644"
   },
-  "directories": {},
-  "readme": "ERROR: No README data found!"
+  "directories": {}
 }
