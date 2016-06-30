@@ -86,5 +86,6 @@
     "host": "packages-12-west.internal.npmjs.com",
     "tmp": "tmp/zone.js-0.6.8.tgz_1459272973740_0.7277568592689931"
   },
-  "_resolved": "https://registry.npmjs.org/zone.js/-/zone.js-0.6.8.tgz"
+  "_resolved": "https://registry.npmjs.org/zone.js/-/zone.js-0.6.8.tgz",
+  "readme": "ERROR: No README data found!"
 }
