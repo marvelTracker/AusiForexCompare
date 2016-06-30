@@ -14,7 +14,7 @@ var ForeignTransfersComponent = (function () {
     }
     ForeignTransfersComponent = __decorate([
         core_1.Component({
-            selector: 'fx-ftransfer',
+            selector: 'af-ftransfer',
             template: " \n        <h1>Foreign Transfer</h1>\n    "
         }), 
         __metadata('design:paramtypes', [])
@@ -23,4 +23,4 @@ var ForeignTransfersComponent = (function () {
 }());
 exports.ForeignTransfersComponent = ForeignTransfersComponent;
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvcmVpZ25UcmFuc2ZlcnMuY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxxQkFBMEIsZUFBZSxDQUFDLENBQUE7QUFTMUM7SUFBQTtJQUVBLENBQUM7SUFURDtRQUFDLGdCQUFTLENBQUM7WUFDUCxRQUFRLEVBQUUsY0FBYztZQUN4QixRQUFRLEVBQUUsNENBRVQ7U0FDSixDQUFDOztpQ0FBQTtJQUlGLGdDQUFDO0FBQUQsQ0FGQSxBQUVDLElBQUE7QUFGWSxpQ0FBeUIsNEJBRXJDLENBQUEiLCJmaWxlIjoiZm9yZWlnblRyYW5zZmVycy5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gICAgc2VsZWN0b3I6ICdmeC1mdHJhbnNmZXInLFxyXG4gICAgdGVtcGxhdGU6IGAgXHJcbiAgICAgICAgPGgxPkZvcmVpZ24gVHJhbnNmZXI8L2gxPlxyXG4gICAgYFxyXG59KVxyXG5cclxuZXhwb3J0IGNsYXNzIEZvcmVpZ25UcmFuc2ZlcnNDb21wb25lbnQge1xyXG4gICAgXHJcbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvcmVpZ25UcmFuc2ZlcnMuY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxxQkFBMEIsZUFBZSxDQUFDLENBQUE7QUFTMUM7SUFBQTtJQUVBLENBQUM7SUFURDtRQUFDLGdCQUFTLENBQUM7WUFDUCxRQUFRLEVBQUUsY0FBYztZQUN4QixRQUFRLEVBQUUsNENBRVQ7U0FDSixDQUFDOztpQ0FBQTtJQUlGLGdDQUFDO0FBQUQsQ0FGQSxBQUVDLElBQUE7QUFGWSxpQ0FBeUIsNEJBRXJDLENBQUEiLCJmaWxlIjoiZm9yZWlnblRyYW5zZmVycy5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gICAgc2VsZWN0b3I6ICdhZi1mdHJhbnNmZXInLFxyXG4gICAgdGVtcGxhdGU6IGAgXHJcbiAgICAgICAgPGgxPkZvcmVpZ24gVHJhbnNmZXI8L2gxPlxyXG4gICAgYFxyXG59KVxyXG5cclxuZXhwb3J0IGNsYXNzIEZvcmVpZ25UcmFuc2ZlcnNDb21wb25lbnQge1xyXG4gICAgXHJcbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=
