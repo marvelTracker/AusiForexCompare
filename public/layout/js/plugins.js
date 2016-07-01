@@ -47,7 +47,7 @@ $(function() {
         
         //Bootstrap select
         var feSelect = function(){
-            if($(".select").length > 0){
+            /*if($(".select").length > 0){
                 $(".select").selectpicker();
                 
                 $(".select").on("change", function(){
@@ -58,7 +58,7 @@ $(function() {
                         $(this).find("option[value="+$(this).val()+"]").attr("selected",true);
                     }
                 });
-            }
+            }*/
         }//END Bootstrap select
         
         
