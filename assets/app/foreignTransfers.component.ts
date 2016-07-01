@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import{DropdownDemoComponent} from './dropdown.component'
 
 @Component({
     selector: 'oz-ftransfer',
@@ -12,16 +13,12 @@ import { Component } from '@angular/core';
                                     <input type="text" class="form-control input-lg" value="1000" />
                                 </div>
                                 <div class="col-sm-2">
-                                    <select class="form-control select" style="display: none;">
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                    </select>
-                                    <button type="button" class="btn dropdown-toggle btn-default btn-lg" data-toggle="dropdown" title="Option 1" aria-expanded="false">
-                                        <span class="pull-left">Option 1</span>&nbsp;<span class="caret"></span>
-                                    </button>
+                                        <select>
+                                            <option value="volvo">AUD</option>
+                                            <option value="saab">USD</option>
+                                            <option value="mercedes">EUR</option>
+                                            <option value="audi">YEN</option>
+                                        </select>
                                 </div>
                                 <div class="col-sm-1" style="font-size: 30px">To</div>
                                 <div class="col-sm-2">
@@ -203,7 +200,8 @@ import { Component } from '@angular/core';
                         </div>
                     </div>
 
-    `
+    `,
+    //directives:[DropdownDemoComponent]
 })
 
 export class ForeignTransfersComponent {

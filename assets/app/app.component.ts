@@ -26,8 +26,7 @@ import{SideBarComponent} from './sidebar.component'
                     </div>
                 </div>
             </div>
-        </div>             
-                                    
+        </div>          
           
         
     `,

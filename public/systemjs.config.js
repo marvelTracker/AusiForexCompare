@@ -4,16 +4,17 @@
     var map = {
         'app':                        'js/app', // 'dist',
         'rxjs':                       'js/vendor/rxjs',
-        '@angular':                   'js/vendor/@angular'
+        '@angular':                   'js/vendor/@angular',         
     };
 
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
         'app':                        { main: 'boot.js',  defaultExtension: 'js' },
-        'rxjs':                       { defaultExtension: 'js' },
+        'rxjs':                       { defaultExtension: 'js' }   
+        
     };
 
-    var packageNames = [
+   var packageNames = [
         '@angular/common',
         '@angular/compiler',
         '@angular/core',
@@ -22,7 +23,7 @@
         '@angular/platform-browser-dynamic',
         '@angular/router',
         '@angular/testing',
-        '@angular/upgrade'
+        '@angular/upgrade'        
     ];
 
     // add package entries for angular packages in the form '@angular/common': { main: 'index.js', defaultExtension: 'js' }
@@ -32,7 +33,8 @@
 
     var config = {
         map: map,
-        packages: packages
+        packages: packages, 
+       
     };
 
     // filterSystemConfig - index.html's chance to modify config before we register it.
