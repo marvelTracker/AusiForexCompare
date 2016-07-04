@@ -11,11 +11,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var DropdownComponent = (function () {
     function DropdownComponent() {
+        this.select = new core_1.EventEmitter();
     }
+    DropdownComponent.prototype.ngOnInit = function () {
+        this.select.emit(this.values[0]);
+    };
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], DropdownComponent.prototype, "select", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Array)
+    ], DropdownComponent.prototype, "values", void 0);
     DropdownComponent = __decorate([
         core_1.Component({
             selector: 'oz-dropdown',
-            template: " <select class=\"btn-lg\">\n                <option value=\"volvo\">AUD</option>\n                <option value=\"saab\">USD</option>\n                <option value=\"mercedes\">EUR</option>\n                <option value=\"audi\">YEN</option>\n              </select>\n"
+            template: " <select class=\"btn-lg\" (change)=\"select.emit($event.target.value)\">\n               <option *ngFor=\"let value of values\">{{value}}</option>\n              </select>\n"
         }), 
         __metadata('design:paramtypes', [])
     ], DropdownComponent);
@@ -23,4 +35,4 @@ var DropdownComponent = (function () {
 }());
 exports.DropdownComponent = DropdownComponent;
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRyb3Bkb3duLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUEscUJBQXdCLGVBQWUsQ0FBQyxDQUFBO0FBWXhDO0lBQUE7SUFFQSxDQUFDO0lBWkQ7UUFBQyxnQkFBUyxDQUFDO1lBQ1QsUUFBUSxFQUFFLGFBQWE7WUFDdkIsUUFBUSxFQUFFLGdSQU1YO1NBQ0EsQ0FBQzs7eUJBQUE7SUFHRix3QkFBQztBQUFELENBRkEsQUFFQyxJQUFBO0FBRlkseUJBQWlCLG9CQUU3QixDQUFBIiwiZmlsZSI6ImRyb3Bkb3duLmNvbXBvbmVudC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gIHNlbGVjdG9yOiAnb3otZHJvcGRvd24nLFxyXG4gIHRlbXBsYXRlOiBgIDxzZWxlY3QgY2xhc3M9XCJidG4tbGdcIj5cclxuICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJ2b2x2b1wiPkFVRDwvb3B0aW9uPlxyXG4gICAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT1cInNhYWJcIj5VU0Q8L29wdGlvbj5cclxuICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJtZXJjZWRlc1wiPkVVUjwvb3B0aW9uPlxyXG4gICAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT1cImF1ZGlcIj5ZRU48L29wdGlvbj5cclxuICAgICAgICAgICAgICA8L3NlbGVjdD5cclxuYFxyXG59KVxyXG5leHBvcnQgY2xhc3MgRHJvcGRvd25Db21wb25lbnQge1xyXG4gXHJcbn1cclxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRyb3Bkb3duLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUEscUJBQXFELGVBQWUsQ0FBQyxDQUFBO0FBU3JFO0lBQUE7UUFDWSxXQUFNLEdBQUcsSUFBSSxtQkFBWSxFQUFFLENBQUM7SUFNeEMsQ0FBQztJQUhDLG9DQUFRLEdBQVI7UUFDRSxJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7SUFDbkMsQ0FBQztJQUxEO1FBQUMsYUFBTSxFQUFFOztxREFBQTtJQUNUO1FBQUMsWUFBSyxFQUFFOztxREFBQTtJQVRWO1FBQUMsZ0JBQVMsQ0FBQztZQUNULFFBQVEsRUFBRSxhQUFhO1lBQ3ZCLFFBQVEsRUFBRSwrS0FHWDtTQUNBLENBQUM7O3lCQUFBO0lBUUYsd0JBQUM7QUFBRCxDQVBBLEFBT0MsSUFBQTtBQVBZLHlCQUFpQixvQkFPN0IsQ0FBQSIsImZpbGUiOiJkcm9wZG93bi5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudCwgT3V0cHV0LCBJbnB1dCwgRXZlbnRFbWl0dGVyfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gIHNlbGVjdG9yOiAnb3otZHJvcGRvd24nLFxyXG4gIHRlbXBsYXRlOiBgIDxzZWxlY3QgY2xhc3M9XCJidG4tbGdcIiAoY2hhbmdlKT1cInNlbGVjdC5lbWl0KCRldmVudC50YXJnZXQudmFsdWUpXCI+XHJcbiAgICAgICAgICAgICAgIDxvcHRpb24gKm5nRm9yPVwibGV0IHZhbHVlIG9mIHZhbHVlc1wiPnt7dmFsdWV9fTwvb3B0aW9uPlxyXG4gICAgICAgICAgICAgIDwvc2VsZWN0PlxyXG5gXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBEcm9wZG93bkNvbXBvbmVudCB7XHJcbiAgQE91dHB1dCgpIHNlbGVjdCA9IG5ldyBFdmVudEVtaXR0ZXIoKTtcclxuICBASW5wdXQoKSB2YWx1ZXM6YW55W107XHJcbiBcclxuICBuZ09uSW5pdCgpe1xyXG4gICAgdGhpcy5zZWxlY3QuZW1pdCh0aGlzLnZhbHVlc1swXSk7XHJcbiAgfVxyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

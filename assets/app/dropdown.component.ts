@@ -1,15 +1,17 @@
-import {Component} from '@angular/core';
+import {Component, Output, Input, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'oz-dropdown',
-  template: ` <select class="btn-lg">
-                <option value="volvo">AUD</option>
-                <option value="saab">USD</option>
-                <option value="mercedes">EUR</option>
-                <option value="audi">YEN</option>
+  template: ` <select class="btn-lg" (change)="select.emit($event.target.value)">
+               <option *ngFor="let value of values">{{value}}</option>
               </select>
 `
 })
 export class DropdownComponent {
+  @Output() select = new EventEmitter();
+  @Input() values:any[];
  
+  ngOnInit(){
+    this.select.emit(this.values[0]);
+  }
 }

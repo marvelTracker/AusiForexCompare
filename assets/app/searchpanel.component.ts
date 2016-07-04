@@ -12,11 +12,11 @@ import{DropdownComponent} from './dropdown.component'
                                     <input type="text" class="form-control input-lg" value="1000" />
                                 </div>
                                 <div class="col-sm-2">
-                                        <oz-dropdown></oz-dropdown>
+                                        <oz-dropdown (select)="sourceCurrency = $event" [values]="currenciesList"></oz-dropdown>
                                 </div>
                                 <div class="col-sm-1" style="font-size: 30px">To</div>
                                 <div class="col-sm-2">
-                                 <oz-dropdown></oz-dropdown>
+                                        <oz-dropdown (select)="convertToCurrency = $event" [values]="currenciesList"></oz-dropdown>
                                 </div>
                                 <div class="col-sm-2">
                                     <button type="button" class="btn btn-success btn-lg">Compare</button>
@@ -27,5 +27,7 @@ import{DropdownComponent} from './dropdown.component'
   directives:[DropdownComponent]
 })
 export class SearchPanelComponent {
- 
+    sourceCurrency:string;
+    convertToCurrency:string;
+    currenciesList:any[] = ["AUD", "EUR", "YEN", "LKR", "USD", "NZD"];
 }
